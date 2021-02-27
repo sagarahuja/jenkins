@@ -5,7 +5,7 @@ pipeline{
         stage('Build'){
             steps {
                 git 'https://github.com/sagarahuja/jenkins.git'
-                sh './mvnw clean compile'
+                sh './mvnw clean compile deploy'
             }
         }
     }
